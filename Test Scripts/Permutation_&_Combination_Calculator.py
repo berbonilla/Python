@@ -19,7 +19,7 @@ def count_repeating_chars(x):
 
 def permutations(length,r):
     permRes = factorial(length)/(factorial(length-r))
-    return print("Permutation Count:", combinations(length,r))   
+    return print("Permutation Count:", permRes)   
 
 def combinations(length,r):
     combRes = factorial(length)/(factorial(length-r)*factorial(r))
@@ -42,7 +42,12 @@ else:
             repVal *= (factorial(result[i]))
 
         print("Factorial:",int(factorial(length)/repVal))
+        permutations(length,r)
+        combinations(length,r)
+        
     else:
         print("Factorial:", factorial(length))
+        permutations(length,r)
+        combinations(length,r)
         
          
